@@ -1,0 +1,45 @@
+#include <windows.h>
+LANGUAGE 0, SUBLANG_NEUTRAL
+100 ICON "icon.ico"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION    0,0,0,0
+PRODUCTVERSION 0,0,0,0
+FILEFLAGSMASK    VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+    FILEFLAGS        VS_FF_DEBUG|VS_FF_PRIVATEBUILD|VS_FF_PRERELEASE
+#else
+    FILEFLAGS        0x0L  // final version
+#endif
+FILEOS         VOS_UNKNOWN | VOS_NT_WINDOWS32
+FILETYPE       VFT_DLL
+FILESUBTYPE    0x0
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "040904E4"
+    {
+      VALUE "Comments",           ""
+      VALUE "CompanyName",       "Your Development"
+      VALUE "FileDescription",   ""
+      VALUE "FileVersion",       "0.0.0.0"
+      VALUE "InternalName",      ""
+      VALUE "LegalCopyright",    "Your"
+      VALUE "LegalTrademarks",   "Your"
+      VALUE "OriginalFilename",  ""
+      VALUE "ProgramID",         ""
+      VALUE "ProductName",       ""
+      VALUE "ProductVersion",    "1.0.0.0"
+      VALUE "Developer",        "Your\0"
+      VALUE "Support",          "unKnown\0"
+      VALUE "Users",            "Limited\0"
+      VALUE "PrivateBuild",     "\0"
+      VALUE "SpecialBuild",     "YES\0"
+      VALUE "Build",            "DEC 2099\0"
+    }
+  }
+  BLOCK "VarFileInfo"
+  {
+    VALUE "Translation", 0x0, 0
+  }
+}
