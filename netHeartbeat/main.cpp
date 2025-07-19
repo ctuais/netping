@@ -62,7 +62,7 @@ void pingFail(void)
     colorIt(7,L")");
 };
 
-int doPings(void)
+void doPings(void)
 {
 #ifdef _MSC_VER //ping to
     wchar_t iplist[$IPTEST$][16] = {L"192.168.0.1",L"192.168.1.1",L"8.8.8.8",L"1.1.1.1",L"208.67.220.220"}; //same num of ip address
